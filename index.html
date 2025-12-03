@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <title>Dr. Sandro Pereira | Cuidado Inteligente – Consulta Médica Online</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Consulta médica online com o Dr. Sandro Pereira (CRM/RS 61741) para avaliação e tratamento da dor, com cuidado inteligente e humanizado." />
+  <meta name="theme-color" content="#002d3b" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <!-- JSON-LD: Médico (ajuste campos conforme necessário) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Sandro Pereira",
+    "medicalSpecialty": "PainManagement",
+    "url": "https://seu-dominio.com",
+    "image": "",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Campina das Missões",
+      "addressRegion": "RS",
+      "addressCountry": "BR"
+    },
+    "telephone": "tel:+55-59-98417-6109",
+    "description": "Consulta médica online focada em dor crônica e aguda. Atendimento humanizado e baseado em evidências."
+  }
+  </script>
+
+  <style>
+    :root {
+      --azul: #002d3b;
+      --dourado: #c9a24d;
+      --cinza: #f4f4f4;
+      --branco: #ffffff;
+      --texto: #1f2933;
+      --maxw: 1080px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html,body { height: 100%; }
+    body {
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--cinza);
+      color: var(--texto);
+      line-height: 1.6;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+    }
+    a { color: inherit; }
+    header {
+      background: var(--azul);
+      color: var(--branco);
+      padding: 1.25rem 1rem;
+    }
+    .container {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0 1rem 3rem;
+    }
+    .topo {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+    .logo-titulo h1 {
+      font-family: "Cinzel", serif;
+      font-size: 1.6rem;
+      letter-spacing: 0.06em;
+    }
+    .logo-titulo p { font-size: 0.9rem; opacity: 0.95; }
+    main { outline: none; }
+    .hero {
+      background: var(--azul);
+      color: var(--branco);
+      padding: 2.5rem 0 3rem;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      gap: 2rem;
+      align-items: center;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      font-family: "Cinzel", serif;
+    }
+    .hero p.sub { font-size: 1.05rem; margin-bottom: 1.1rem; }
+    .hero ul { margin-bottom: 1rem; list-style: none; padding-left: 0; }
+    .hero ul li::before {
+      content: "•";
+      color: var(--dourado);
+      font-weight: bold;
+      display: inline-block;
+      width: 1rem;
+    }
+    .botoes { display:flex; flex-wrap:wrap; gap:0.75rem; }
+    .btn {
+      display:inline-block; padding:0.85rem 1.4rem; border-radius:999px; text-decoration:none; font-weight:600; font-size:0.95rem;
+      text-align:center; border:1px solid transparent; cursor:pointer; transition:transform .12s ease, box-shadow .12s ease;
+      white-space:nowrap;
+    }
+    .btn-primario {
+      background:var(--dourado); color:#111827; box-shadow:0 6px 16px rgba(0,0,0,0.22);
+    }
+    .btn-primario:focus, .btn-primario:hover { transform:translateY(-2px); box-shadow:0 10px 24px rgba(0,0,0,0.28); }
+    .btn-secundario {
+      background:transparent; color:var(--branco); border-color: rgba(255,255,255,0.38);
+    }
+    .hero-card {
+      background: rgba(15,23,42,0.85);
+      border-radius: 1.25rem; padding: 1.2rem; border:1px solid rgba(148,163,184,0.5);
+    }
+    .hero-card h3 { margin-bottom:.6rem; font-size:1.05rem; }
+    .hero-card p { font-size:.92rem; opacity:.95; margin-bottom:.35rem; }
+    section { padding: 2.2rem 0; }
+    h3.section-title {
+      font-size:1.4rem; margin-bottom:1rem; font-family:"Cinzel",serif; color:#111827;
+    }
+    .grid-2 { display:grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap:1.6rem; }
+    .card {
+      background: var(--branco); border-radius:1.0rem; padding:1.25rem; box-shadow:0 12px 30px rgba(15,23,42,0.06); border:1px solid rgba(15,23,42,0.04);
+    }
+    .card h4 { font-size:1.05rem; margin-bottom:.6rem; }
+    .card ul { padding-left:1.05rem; font-size:0.95rem; }
+    .faq-item + .faq-item { margin-top:1rem; }
+    .faq-pergunta { font-weight:600; margin-bottom:0.25rem; }
+    .chamada-final { text-align:center; padding:2.2rem 1.2rem; background:var(--azul); color:var(--branco); border-radius:1rem; box-shadow:0 16px 40px rgba(15,23,42,0.28); }
+    footer { text-align:center; font-size:0.8rem; color:#6b7280; padding:1.5rem 1rem 2.5rem; }
+
+    /* WhatsApp flutuante */
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 9999;
+      display:flex;
+      gap:.6rem;
+      align-items:center;
+      text-decoration:none;
+    }
+    .whatsapp-btn {
+      background: #25D366;
+      color: #fff;
+      padding: 0.9rem 1rem;
+      border-radius: 999px;
+      font-weight:700;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+      display:inline-flex; align-items:center; gap:.6rem;
+    }
+    .whatsapp-hours {
+      background: rgba(0,0,0,0.6);
+      color:#fff; padding:.5rem .8rem; border-radius: .6rem; font-size:0.82rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid, .grid-2, .topo { grid-template-columns: 1fr; display: grid; }
+      .hero { padding-top: 1.1rem; }
+      .chamada-final { margin: 0 -1rem; border-radius: 0; }
+      .whatsapp-float { right: 12px; bottom: 12px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container topo">
+      <div class="logo-titulo">
+        <h1>Dr. Sandro Pereira | Cuidado Inteligente</h1>
+        <p>CRM/RS 61741 – Consulta médica online em dor e cuidados contínuos</p>
+      </div>
+      <nav aria-label="Ações rápidas">
+        <a class="btn btn-secundario" href="https://wa.me/5555999070106" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="maincontent" tabindex="-1">
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container hero-grid">
+        <div>
+          <h2 id="hero-heading">Cuidado médico inteligente para quem convive com dor.</h2>
+          <p class="sub">Atendimentos médicos online para avaliação, orientação e tratamento da dor – sem você sair de casa.</p>
+          <ul aria-hidden="false">
+            <li>Avaliação especializada da dor</li>
+            <li>Atendimento humanizado e baseado em evidências</li>
+            <li>Acompanhamento contínuo, mesmo à distância</li>
+          </ul>
+          <div class="botoes" style="margin-top: 1rem;">
+            <!-- TROCAR AQUI: link da sua agenda online -->
+            <a href="https://seu-link-de-agendamento.com" class="btn btn-primario" target="_blank" rel="noopener noreferrer" aria-label="Agendar consulta">Agendar consulta</a>
+            <!-- TROCAR AQUI: WhatsApp -->
+            <a href="https://wa.me/5555999070106" class="btn btn-secundario" target="_blank" rel="noopener noreferrer" aria-label="Abrir WhatsApp">Falar pelo WhatsApp</a>
+          </div>
+        </div>
+
+        <aside aria-label="Como posso te ajudar?" class="hero-card">
+          <h3>Como posso te ajudar?</h3>
+          <p>• Dor crônica (coluna, articulações, musculoesquelética)</p>
+          <p>• Dor de cabeça frequente</p>
+          <p>• Dor após lesões ou cirurgias</p>
+          <p>• Dúvidas sobre uso seguro de medicamentos para dor</p>
+          <p>• Segunda opinião em exames e tratamentos</p>
+        </aside>
+      </div>
+    </section>
+
+    <section aria-labelledby="sobre-title">
+      <div class="container grid-2">
+        <div>
+          <h3 id="sobre-title" class="section-title">Sobre o médico</h3>
+          <p>
+            Sou o <strong>Dr. Sandro Pereira</strong>, médico com atuação na área da saúde desde 2023.
+            Graduado em Medicina com foco na dor aguda e crônica.
+            Objetivo de oferecer um cuidado inteligente: ouvir sua história, revisar exames e construir um plano de tratamento realista e seguro.
+          </p>
+        </div>
+        <div class="card" aria-hidden="false">
+          <h4>Áreas de atuação</h4>
+          <ul>
+            <li>Dor crônica musculoesquelética</li>
+            <li>Dor na coluna e articulações</li>
+            <li>Cefaleias e enxaquecas</li>
+            <li>Dor pós-trauma e pós-operatória</li>
+            <li>Condições crônicas associadas à dor</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="para-quem">
+      <div class="container grid-2">
+        <div class="card">
+          <h4 id="para-quem">Para quem é a consulta online?</h4>
+          <ul>
+            <li>Pessoas que convivem com dor há semanas ou meses</li>
+            <li>Quem já tentou vários remédios sem melhora duradoura</li>
+            <li>Pacientes com dificuldade de locomoção</li>
+            <li>Quem precisa de segunda opinião sobre diagnóstico</li>
+            <li>Familiares que buscam orientação</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h4>Como funciona a consulta online?</h4>
+          <ol style="padding-left:1.05rem;">
+            <li>Você agenda pela página ou WhatsApp.</li>
+            <li>Envia exames e resumo dos sintomas (opcional).</li>
+            <li>Consulta por vídeo chamada no horário combinado.</li>
+            <li>Plano de cuidado e orientações claras.</li>
+            <li>Retornos agendados quando necessário.</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h3 class="section-title">Por que escolher este cuidado?</h3>
+        <div class="grid-2">
+          <div class="card">
+            <ul>
+              <li>Foco em dor e cuidado contínuo</li>
+              <li>Olhar integral: contexto de vida</li>
+              <li>Linguagem clara e objetiva</li>
+              <li>Consulta com tempo para ouvir sua história</li>
+            </ul>
+          </div>
+          <div class="card">
+            <ul>
+              <li>Respeito às normas e à ética da telemedicina</li>
+              <li>Plano de tratamento estruturado</li>
+              <li>Receitas e atestados digitais quando indicados</li>
+              <li>Acompanhamento longitudinal</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section aria-labelledby="faq-title">
+      <div class="container">
+        <h3 id="faq-title" class="section-title">Perguntas frequentes</h3>
+        <div class="card" role="region" aria-label="Perguntas Frequentes">
+          <div class="faq-item">
+            <p class="faq-pergunta">A consulta online substitui a presencial?</p>
+            <p>Em muitos casos sim — especialmente para avaliação e acompanhamento. Quando necessário, o médico orienta exame físico presencial.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-pergunta">Como é feito o pagamento?</p>
+            <p>Pagamento antecipado via PIX ou método acordado. Horário reservado após confirmação.</p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-pergunta">Recebo receita e atestado?</p>
+            <p>Sim, quando clinicamente indicado, entregamos em formato digital conforme legislação.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="chamada-final">
+          <h3 style="font-family: 'Cinzel', serif; font-size: 1.45rem; margin-bottom: .6rem;">
+            Um cuidado mais próximo — mesmo de longe.
+          </h3>
+          <p>Se você convive com dor e precisa de orientação qualificada, dê o próximo passo.</p>
+          <div class="botoes" style="justify-content:center; margin-top:1rem;">
+            <a href="https://seu-link-de-agendamento.com" class="btn btn-primario" target="_blank" rel="noopener noreferrer">Agendar consulta agora</a>
+            <a href="https://wa.me/5555999070106" class="btn btn-secundario" target="_blank" rel="noopener noreferrer">Chamar no WhatsApp</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="ano"></span> Dr. Sandro Pereira | Cuidado Inteligente – CRM/RS 61741.  
+    Consulta médica online em dor e cuidados contínuos.
+  </footer>
+
+  <!-- WhatsApp flutuante -->
+  <a class="whatsapp-float" href="https://wa.me/5555999070106" target="_blank" rel="noopener noreferrer" aria-label="Abrir conversa no WhatsApp">
+    <span class="whatsapp-btn" role="button">💬 WhatsApp</span>
+    <span class="whatsapp-hours" aria-hidden="true">Seg–Sex • 09h–18h</span>
+  </a>
+
+  <script>
+    document.getElementById('ano').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
